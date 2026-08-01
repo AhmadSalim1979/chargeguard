@@ -1,18 +1,33 @@
-# Qiyadon
+# ChargeGuard
 
 > ChargeGuard by Qiyadon helps small-to-midsize US trucking carriers document and recover the detention and accessorial charges they are owed, automatically. ChargeGuard applies each broker or shipper's own actual agreed terms to every claim, instead of one generic default rule for every customer.
 
-- Home: https://qiyadon.com/
-- Product (how it works): https://qiyadon.com/product
-- Guides hub: https://qiyadon.com/guides
-  - Why detention terms vary by broker or shipper: https://qiyadon.com/why-detention-terms-vary-by-broker
-  - How to file a detention claim: https://qiyadon.com/how-to-file-a-detention-claim
-  - Layover vs. TONU vs. lumper fees: https://qiyadon.com/layover-vs-tonu-vs-lumper-fees
-  - How to avoid detention claim disputes: https://qiyadon.com/how-to-avoid-detention-claim-disputes
-  - Detention pay rates for owner-operators & small fleets: https://qiyadon.com/detention-pay-rates-owner-operators-small-fleets
-- Tool: Detention & accessorial savings calculator: https://qiyadon.com/detention-pay-calculator
-- Comparison: ChargeGuard vs. DetentionIQ, HaulClaim & DockClaim: https://qiyadon.com/detention-software-comparison
-- Pricing: https://qiyadon.com/pricing
-- FAQ: https://qiyadon.com/faq
-- About: https://qiyadon.com/about
-- Contact: https://qiyadon.com/contact
+## Pricing
+
+Tiered flat-rate monthly subscriptions banded by fleet size:
+- Starter: $59/month (5-15 trucks), or $49/month billed annually
+- Growth: $149/month (16-50 trucks), or $124/month billed annually
+- Scale: $349/month (51-150 trucks), or $291/month billed annually
+
+Optional TMS/ELD integration: +$29/month on Starter and Growth, included free on Scale. No long-term contract; month-to-month.
+
+## Pages
+
+- Home: https://chargeguard.net/
+- Product (how it works): https://chargeguard.net/product
+- Guides hub: https://chargeguard.net/guides
+  - Why detention terms vary by broker or shipper: https://chargeguard.net/why-detention-terms-vary-by-broker
+  - How to file a detention claim: https://chargeguard.net/how-to-file-a-detention-claim
+  - Layover vs. TONU vs. lumper fees: https://chargeguard.net/layover-vs-tonu-vs-lumper-fees
+  - How to avoid detention claim disputes: https://chargeguard.net/how-to-avoid-detention-claim-disputes
+  - Detention pay rates for owner-operators & small fleets: https://chargeguard.net/detention-pay-rates-owner-operators-small-fleets
+- Tool: Detention & accessorial savings calculator: https://chargeguard.net/detention-pay-calculator
+- Comparison: ChargeGuard vs. DetentionIQ, HaulClaim & DockClaim: https://chargeguard.net/detention-software-comparison
+- Pricing: https://chargeguard.net/pricing
+- FAQ: https://chargeguard.net/faq
+- About: https://chargeguard.net/about
+- Contact: https://chargeguard.net/contact
+- Privacy Policy: https://chargeguard.net/privacy-policy
+- Terms of Service: https://chargeguard.net/terms-of-service
+- Cancellation & Refund Policy: https://chargeguard.net/cancellation-refund-policy
+- Ownership Statement: https://chargeguard.net/ownership-statement

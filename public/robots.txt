@@ -13,4 +13,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://qiyadon.com/sitemap.xml
+Sitemap: https://chargeguard.net/sitemap.xml
