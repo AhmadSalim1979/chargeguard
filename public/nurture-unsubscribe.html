@@ -67,11 +67,11 @@
       if (result.ok) {
         status.textContent = "You've been unsubscribed and won't receive further emails in this sequence.";
       } else {
-        status.textContent = (result.body && result.body.error) || 'Something went wrong -- please email us directly at contact@qiyadon.com.';
+        status.textContent = (result.body && result.body.error) || 'Something went wrong -- please email us directly at contact@chargeguard.net.';
       }
     })
     .catch(function () {
-      status.textContent = 'Something went wrong -- please email us directly at contact@qiyadon.com.';
+      status.textContent = 'Something went wrong -- please email us directly at contact@chargeguard.net.';
     });
 })();
 </script>
