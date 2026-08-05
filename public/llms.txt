@@ -11,6 +11,14 @@ Tiered flat-rate monthly subscriptions banded by fleet size:
 
 Optional TMS/ELD integration: +$29/month on Starter and Growth, included free on Scale. No long-term contract; month-to-month.
 
+## Product Demo Videos
+
+Real screen recordings of the actual product (not mockups), embedded on the Home and Product pages:
+- From a Photo to a Paid Claim (full loop, ~1 min): https://chargeguard.net/assets/videos/photo-to-paid-claim-demo.mp4 -- photograph a rate confirmation, driver taps Start/Stop, ChargeGuard applies the broker's real contract terms and calculates detention owed, generates a documented claim, tracked through to paid.
+- Your Broker's Real Terms, Applied Automatically (~47 sec): https://chargeguard.net/assets/videos/broker-detention-terms-demo.mp4 -- also embedded on the "why detention terms vary by broker" guide. ChargeGuard stores a separate profile per broker/shipper and reads contract terms from a photo.
+- The Driver Experience: Two Taps (~42 sec): https://chargeguard.net/assets/videos/driver-app-two-taps-demo.mp4 -- driver invited by text, sets a PIN, sees only their own trips, taps Start and Arrived.
+- Never Lose Track of a Claim (~47 sec): https://chargeguard.net/assets/videos/claims-tracking-dashboard-demo.mp4 -- every claim tracked in one list through draft/sent/paid/disputed, status updates in one click.
+
 ## Pages
 
 - Home: https://chargeguard.net/

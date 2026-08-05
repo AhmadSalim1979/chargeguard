@@ -149,6 +149,23 @@ a { color: inherit; text-decoration: none; }
   .media-visual { min-height: 260px; }
 }
 
+/* Product demo videos: real screen-recorded walkthroughs, not stock photos.
+   Uses the exact native 16:9 render aspect ratio so object-fit:cover never
+   crops any on-screen UI. */
+.video-visual { position: relative; aspect-ratio: 16 / 9; min-height: 0; background: var(--navy-950); border-radius: var(--radius-lg); overflow: hidden; }
+.video-visual video { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; background: var(--navy-950); }
+.video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.video-card { background: var(--white); border: 1px solid var(--slate-200); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card); display: flex; flex-direction: column; }
+.video-card .video-visual { border-radius: 0; box-shadow: none; }
+.video-card-body { padding: 22px 26px 26px; }
+.video-card-body h3 { font-size: 18px; margin-bottom: 8px; }
+.video-card-body p { color: var(--slate-700); font-size: 14.5px; margin: 0; }
+.video-feature { max-width: 820px; margin: 0 auto; }
+.video-feature figcaption { margin-top: 16px; text-align: center; color: var(--slate-700); font-size: 14.5px; }
+@media (max-width: 860px) {
+  .video-grid { grid-template-columns: 1fr; }
+}
+
 /* Dashboard mockup visual (legacy -- no longer used by the hero, kept in
    case another section still references it) */
 .dash-card { position: relative; z-index: 2; background: var(--surface-dark); border: 1px solid var(--border-dark); border-radius: var(--radius-lg); box-shadow: 0 24px 60px rgba(0,0,0,0.35); overflow: hidden; }
