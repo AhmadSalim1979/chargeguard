@@ -203,6 +203,14 @@ a { color: inherit; text-decoration: none; }
 .feature-card p { font-size: 14.5px; color: var(--slate-700); }
 .section-dark .feature-card p, .section-darker .feature-card p { color: var(--slate-400); }
 
+/* ---------- Proof bar (homepage stat strip) ---------- */
+.stat-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 8px; }
+.stat-item { text-align: center; padding: 8px 14px; }
+.stat-number { font-size: 42px; font-weight: 800; letter-spacing: -0.02em; color: var(--emerald-dark); line-height: 1; margin-bottom: 12px; }
+.stat-label { font-size: 14.5px; color: var(--slate-700); line-height: 1.5; }
+.stat-cite { margin-top: 28px; text-align: center; font-size: 12.5px; color: var(--slate-500); }
+@media (max-width: 640px) { .stat-bar { grid-template-columns: 1fr; gap: 28px; } }
+
 /* ---------- Steps ---------- */
 .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; position: relative; }
 .step { position: relative; }

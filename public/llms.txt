@@ -2,6 +2,14 @@
 
 > ChargeGuard by Qiyadon helps small-to-midsize US trucking carriers document and recover the detention and accessorial charges they are owed, automatically. ChargeGuard applies each broker or shipper's own actual agreed terms to every claim, instead of one generic default rule for every customer.
 
+## Key Facts
+
+- ChargeGuard is detention and accessorial charge recovery software built specifically for small-to-midsize US trucking carriers and owner-operators (1-200 trucks) -- not enterprise fleets.
+- Detention affected 39.3% of all truckload stops in 2023, costing the US trucking industry an estimated $15.1 billion -- $3.6 billion in direct expenses and $11.5 billion in lost productivity. Source: American Transportation Research Institute (ATRI), 2024 driver detention study.
+- 94.5% of fleets charge detention fees, but fewer than 50% of those invoices are actually paid. Total time lost to driver detention exceeded 135 million hours in for-hire trucking in 2023. Source: ATRI 2024 driver detention study.
+- ChargeGuard costs $59-$349/month depending on fleet size, is month-to-month with no long-term contract, and can be cancelled anytime.
+- ChargeGuard is founder-led (Qiyadon, led by Ahmad Salim as Founding Board Member) -- customers deal directly with the people who built the product, not a support call center.
+
 ## Pricing
 
 Tiered flat-rate monthly subscriptions banded by fleet size:
