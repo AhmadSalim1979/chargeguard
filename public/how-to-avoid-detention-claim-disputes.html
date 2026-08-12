@@ -116,7 +116,7 @@
 <section id="cta-section" class="section section-dark"><div class="container narrow final-cta">
   <h2>Fewer Disputes, More Accurate Claims</h2>
   <p class="section-lede">Get early access to ChargeGuard and generate claims that cite each customer's actual agreed terms, not a generic assumption.</p>
-  <button type="button" class="btn btn-primary" data-waitlist-open>Get Early Access</button>
+  <a class="btn btn-primary" href="https://app.chargeguard.net/signup">Start Your Free 60-Day Trial</a>
 </div></section>
 <footer class="site-footer">
   <div class="container">
@@ -148,107 +148,5 @@
     </div>
   </div>
 </footer>
-<div class="waitlist-modal-overlay" id="waitlist-modal-overlay" hidden>
-  <div class="waitlist-modal" role="dialog" aria-modal="true" aria-labelledby="waitlist-modal-title">
-    <button type="button" class="waitlist-modal-close" id="waitlist-modal-close" aria-label="Close">&times;</button>
-    <div style="text-align:center; margin-bottom:18px;"><img src="https://chargeguard.net/chargeguard-email-logo.png" alt="ChargeGuard by Qiyadon" style="max-width:160px; width:100%; height:auto;"></div>
-    <h2 id="waitlist-modal-title">Get Early Access</h2>
-    <p class="waitlist-modal-sub">Tell us a bit about your business. We onboard new carriers on a rolling basis and will follow up as capacity opens up.</p>
-    <form id="waitlist-form">
-      <div class="form-row">
-        <label for="wl-name">Full Name *</label>
-        <input type="text" id="wl-name" name="name" autocomplete="name" required>
-      </div>
-      <div class="form-row">
-        <label for="wl-phone">Phone *</label>
-        <input type="tel" id="wl-phone" name="phone" autocomplete="tel" required>
-      </div>
-      <div class="form-row">
-        <label for="wl-email">Email *</label>
-        <input type="email" id="wl-email" name="email" autocomplete="email" required>
-      </div>
-      <div class="form-row">
-        <label for="wl-company">Company Name *</label>
-        <input type="text" id="wl-company" name="company" autocomplete="organization" required>
-      </div>
-      <div class="form-row">
-        <label for="wl-fleet-size">Fleet Size</label>
-        <select id="wl-fleet-size" name="fleet_size">
-          <option value="">Select fleet size</option>
-          <option>1-4 trucks</option>
-          <option>5-15 trucks</option>
-          <option>16-50 trucks</option>
-          <option>51-150 trucks</option>
-          <option>150+ trucks</option>
-        </select>
-      </div>
-      <div class="form-row">
-        <label for="wl-notes">Anything else we should know? (optional)</label>
-        <textarea id="wl-notes" name="notes" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-      <p class="form-status" id="waitlist-form-status" aria-live="polite"></p>
-    </form>
-  </div>
-</div>
-<script>
-(function () {
-  var overlay = document.getElementById('waitlist-modal-overlay');
-  if (!overlay) return;
-  var closeBtn = document.getElementById('waitlist-modal-close');
-  var form = document.getElementById('waitlist-form');
-  var status = document.getElementById('waitlist-form-status');
-
-  function openModal() {
-    overlay.hidden = false;
-    document.body.classList.add('waitlist-modal-open');
-  }
-  function closeModal() {
-    overlay.hidden = true;
-    document.body.classList.remove('waitlist-modal-open');
-  }
-
-  document.querySelectorAll('[data-waitlist-open]').forEach(function (el) {
-    el.addEventListener('click', function (e) { e.preventDefault(); openModal(); });
-  });
-  closeBtn.addEventListener('click', closeModal);
-  overlay.addEventListener('click', function (e) { if (e.target === overlay) closeModal(); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !overlay.hidden) closeModal(); });
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    status.textContent = 'Submitting...';
-    status.className = 'form-status';
-    var payload = {
-      name: document.getElementById('wl-name').value.trim(),
-      phone: document.getElementById('wl-phone').value.trim(),
-      email: document.getElementById('wl-email').value.trim(),
-      company: document.getElementById('wl-company').value.trim(),
-      fleet_size: document.getElementById('wl-fleet-size').value,
-      notes: document.getElementById('wl-notes').value.trim()
-    };
-    fetch('/submit-waitlist', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload)
-    })
-      .then(function (res) { return res.json().then(function (body) { return { ok: res.ok, body: body }; }); })
-      .then(function (result) {
-        if (result.ok) {
-          form.reset();
-          status.textContent = '';
-          closeModal();
-        } else {
-          status.textContent = (result.body && result.body.error) || 'Something went wrong -- please try again or email us directly.';
-          status.className = 'form-status error';
-        }
-      })
-      .catch(function () {
-        status.textContent = 'Something went wrong -- please try again or email us directly.';
-        status.className = 'form-status error';
-      });
-  });
-})();
-</script>
 </body>
 </html>
