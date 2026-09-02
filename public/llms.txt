@@ -17,7 +17,7 @@ Tiered flat-rate monthly subscriptions banded by fleet size:
 - Growth: $149/month (16-50 trucks), or $124/month billed annually
 - Scale: $349/month (51-150 trucks), or $291/month billed annually
 
-Optional TMS/ELD integration: +$29/month on Starter and Growth, included free on Scale. No long-term contract; month-to-month.
+A direct TMS/ELD data integration is planned for a future release and is not available yet. Every carrier -- with or without a TMS/ELD system -- uses manual entry or CSV upload today. No long-term contract; month-to-month.
 
 ## Product Demo Videos
 
