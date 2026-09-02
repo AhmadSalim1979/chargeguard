@@ -183,6 +183,47 @@
     return;
   }
 
+  // MOOSA_CMO_PHASE2_FIRST_PARTY_MEASUREMENT_ACTIVE_20260902: page_viewed,
+  // form_started, form_progress -- Ahmad-approved first-party, token-
+  // correlated measurement (state/autonomy/cmo/phase2-measurement-design.json).
+  // Fire-and-forget: never blocks the real form, never surfaces an error to
+  // the person filling it out if a beacon fails.
+  function sendDiagnosticEvent(event, extra) {
+    try {
+      fetch('https://api.qiyadon.com/diagnostic-event', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.assign({ token: token, event: event }, extra || {})),
+        keepalive: true
+      }).catch(function () {});
+    } catch (e) {}
+  }
+  sendDiagnosticEvent('page_viewed');
+
+  var formStartedSent = false;
+  var lastFieldsCompletedSent = 0;
+  function countCompletedFields() {
+    var keys = ["tms_eld_system","monthly_loads","monthly_detention_incidents","detention_tracking_process","claim_followup","time_consuming_task","error_cause","trust_blockers","pilot_interest"];
+    var completed = 0;
+    keys.forEach(function (key) {
+      var manual = form.querySelector('.diag-manual[data-for="' + key + '"]').value.trim();
+      var checked = form.querySelector('input[name="' + key + '"]:checked');
+      if (manual || checked) completed++;
+    });
+    return completed;
+  }
+  form.addEventListener('input', function () {
+    if (!formStartedSent) {
+      formStartedSent = true;
+      sendDiagnosticEvent('form_started');
+    }
+    var count = countCompletedFields();
+    if (count > lastFieldsCompletedSent) {
+      lastFieldsCompletedSent = count;
+      sendDiagnosticEvent('form_progress', { fields_completed: count });
+    }
+  });
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var answers = {};
