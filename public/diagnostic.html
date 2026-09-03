@@ -32,7 +32,36 @@
     "parentOrganization": { "@type": "Organization", "name": "Qiyadon", "url": "https://qiyadon.com/" }
   }
   </script>
-  <script defer src="https://analytics.chargeguard.net/script.js" data-website-id="e1aefa57-5c62-4101-aeff-b0b69da52fd2"></script>
+  <script>
+  // MOOSA_CMO_DIAGNOSTIC_TOKEN_ANALYTICS_REDACTION_ACTIVE_20260903: this page's
+  // URL carries a sensitive, per-prospect diagnostic token in its query string
+  // (?token=...). Umami's own documented data-before-send hook (confirmed
+  // present in the actual deployed script.js for this self-hosted Umami
+  // v3.1.0 instance, not merely in documentation) intercepts every payload --
+  // including the automatic initial pageview -- before it is sent, so the
+  // token never leaves the browser in the tracked payload. Only parameter
+  // NAMES matching a sensitive pattern are stripped; ordinary parameters
+  // (e.g. utm_*) are preserved unchanged. This does not affect window.location
+  // or the page's own token-reading logic below -- only what Umami records.
+  window.umamiBeforeSend = function (type, payload) {
+    if (payload && payload.url) {
+      try {
+        var u = new URL(payload.url, window.location.origin);
+        var kept = new URLSearchParams();
+        u.searchParams.forEach(function (value, key) {
+          if (!/token|code|otp|password|passwd|pass\b|auth|session|secret|key\b|email|phone/i.test(key)) {
+            kept.set(key, value);
+          }
+        });
+        var qs = kept.toString();
+        u.search = qs ? '?' + qs : '';
+        payload.url = u.toString();
+      } catch (e) {}
+    }
+    return payload;
+  };
+  </script>
+  <script defer data-before-send="umamiBeforeSend" src="https://analytics.chargeguard.net/script.js" data-website-id="e1aefa57-5c62-4101-aeff-b0b69da52fd2"></script>
 </head>
 <body>
 <header class="site-header" data-header>
