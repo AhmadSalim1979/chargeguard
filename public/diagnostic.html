@@ -250,7 +250,7 @@
       .then(function (res) { return res.json().then(function (body) { return { ok: res.ok, body: body }; }); })
       .then(function (result) {
         if (result.ok) {
-          form.innerHTML = '<p class="page-lede">Thank you -- your diagnostic has been recorded. Our team will follow up soon.</p>';
+          form.innerHTML = '<p class="page-lede"><strong>Your diagnostic has been received and safely recorded.</strong></p><p class="page-lede">You will receive your personalized results by email within 24 hours -- no further action is needed from you right now.</p>';
         } else {
           status.textContent = (result.body && result.body.error) || 'Something went wrong -- please try again or email us directly.';
           status.className = 'form-status error';
