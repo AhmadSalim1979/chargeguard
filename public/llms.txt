@@ -3,21 +3,22 @@
 > ChargeGuard by Qiyadon helps small-to-midsize US trucking carriers document and recover the detention and accessorial charges they are owed, automatically. ChargeGuard applies each broker or shipper's own actual agreed terms to every claim, instead of one generic default rule for every customer.
 
 - Home: https://chargeguard.net/
-- Product: https://chargeguard.net/product
+- About: https://chargeguard.net/about
+- Cancellation Refund Policy: https://chargeguard.net/cancellation-refund-policy
+- Compare/Chargeguard Vs Manual Spreadsheet Tracking: https://chargeguard.net/compare/chargeguard-vs-manual-spreadsheet-tracking
+- Contact: https://chargeguard.net/contact
+- Content/Why Carriers Dont Collect Detention Pay: https://chargeguard.net/content/why-carriers-dont-collect-detention-pay
+- Detention Pay Calculator: https://chargeguard.net/detention-pay-calculator
+- Detention Pay Rates Owner Operators Small Fleets: https://chargeguard.net/detention-pay-rates-owner-operators-small-fleets
+- Faq: https://chargeguard.net/faq
 - Guides: https://chargeguard.net/guides
-- Why Detention Terms Vary By Broker: https://chargeguard.net/why-detention-terms-vary-by-broker
+- How To Avoid Detention Claim Disputes: https://chargeguard.net/how-to-avoid-detention-claim-disputes
 - How To File A Detention Claim: https://chargeguard.net/how-to-file-a-detention-claim
 - Layover Vs Tonu Vs Lumper Fees: https://chargeguard.net/layover-vs-tonu-vs-lumper-fees
-- How To Avoid Detention Claim Disputes: https://chargeguard.net/how-to-avoid-detention-claim-disputes
-- Detention Pay Rates Owner Operators Small Fleets: https://chargeguard.net/detention-pay-rates-owner-operators-small-fleets
-- Detention Pay Calculator: https://chargeguard.net/detention-pay-calculator
-- Pricing: https://chargeguard.net/pricing
-- Faq: https://chargeguard.net/faq
-- About: https://chargeguard.net/about
-- Contact: https://chargeguard.net/contact
-- Privacy Policy: https://chargeguard.net/privacy-policy
-- Terms Of Service: https://chargeguard.net/terms-of-service
-- Cancellation Refund Policy: https://chargeguard.net/cancellation-refund-policy
 - Ownership Statement: https://chargeguard.net/ownership-statement
-- Content/Why Carriers Dont Collect Detention Pay: https://chargeguard.net/content/why-carriers-dont-collect-detention-pay
-- Compare/Chargeguard Vs Manual Spreadsheet Tracking: https://chargeguard.net/compare/chargeguard-vs-manual-spreadsheet-tracking
+- Pricing: https://chargeguard.net/pricing
+- Privacy Policy: https://chargeguard.net/privacy-policy
+- Product: https://chargeguard.net/product
+- Terms Of Service: https://chargeguard.net/terms-of-service
+- Use Case/Tms Eld Integration Chargeguard: https://chargeguard.net/use-case/tms-eld-integration-chargeguard
+- Why Detention Terms Vary By Broker: https://chargeguard.net/why-detention-terms-vary-by-broker
