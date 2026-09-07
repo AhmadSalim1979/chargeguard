@@ -2,47 +2,21 @@
 
 > ChargeGuard by Qiyadon helps small-to-midsize US trucking carriers document and recover the detention and accessorial charges they are owed, automatically. ChargeGuard applies each broker or shipper's own actual agreed terms to every claim, instead of one generic default rule for every customer.
 
-## Key Facts
-
-- ChargeGuard is detention and accessorial charge recovery software built specifically for small-to-midsize US trucking carriers and owner-operators (1-200 trucks) -- not enterprise fleets.
-- Detention affected 39.3% of all truckload stops in 2023, costing the US trucking industry an estimated $15.1 billion -- $3.6 billion in direct expenses and $11.5 billion in lost productivity. Source: American Transportation Research Institute (ATRI), 2024 driver detention study.
-- 94.5% of fleets charge detention fees, but fewer than 50% of those invoices are actually paid. Total time lost to driver detention exceeded 135 million hours in for-hire trucking in 2023. Source: ATRI 2024 driver detention study.
-- ChargeGuard costs $59-$349/month depending on fleet size, is month-to-month with no long-term contract, and can be cancelled anytime.
-- ChargeGuard is founder-led (Qiyadon, led by Ahmad Salim as Founding Board Member) -- customers deal directly with the people who built the product, not a support call center.
-
-## Pricing
-
-Tiered flat-rate monthly subscriptions banded by fleet size:
-- Starter: $59/month (5-15 trucks), or $49/month billed annually
-- Growth: $149/month (16-50 trucks), or $124/month billed annually
-- Scale: $349/month (51-150 trucks), or $291/month billed annually
-
-Every carrier uses manual entry or CSV upload today -- no special hardware or software required. No long-term contract; month-to-month.
-
-## Product Demo Videos
-
-Real screen recordings of the actual product (not mockups), embedded on the Home and Product pages:
-- From a Photo to a Paid Claim (full loop, ~1 min): https://chargeguard.net/assets/videos/photo-to-paid-claim-demo.mp4 -- photograph a rate confirmation, driver taps Start/Stop, ChargeGuard applies the broker's real contract terms and calculates detention owed, generates a documented claim, tracked through to paid.
-- Your Broker's Real Terms, Applied Automatically (~47 sec): https://chargeguard.net/assets/videos/broker-detention-terms-demo.mp4 -- also embedded on the "why detention terms vary by broker" guide. ChargeGuard stores a separate profile per broker/shipper and reads contract terms from a photo.
-- The Driver Experience: Two Taps (~42 sec): https://chargeguard.net/assets/videos/driver-app-two-taps-demo.mp4 -- driver invited by text, sets a PIN, sees only their own trips, taps Start and Arrived.
-- Never Lose Track of a Claim (~47 sec): https://chargeguard.net/assets/videos/claims-tracking-dashboard-demo.mp4 -- every claim tracked in one list through draft/sent/paid/disputed, status updates in one click.
-
-## Pages
-
 - Home: https://chargeguard.net/
-- Product (how it works): https://chargeguard.net/product
-- Guides hub: https://chargeguard.net/guides
-  - Why detention terms vary by broker or shipper: https://chargeguard.net/why-detention-terms-vary-by-broker
-  - How to file a detention claim: https://chargeguard.net/how-to-file-a-detention-claim
-  - Layover vs. TONU vs. lumper fees: https://chargeguard.net/layover-vs-tonu-vs-lumper-fees
-  - How to avoid detention claim disputes: https://chargeguard.net/how-to-avoid-detention-claim-disputes
-  - Detention pay rates for owner-operators & small fleets: https://chargeguard.net/detention-pay-rates-owner-operators-small-fleets
-- Tool: Detention & accessorial savings calculator: https://chargeguard.net/detention-pay-calculator
+- Product: https://chargeguard.net/product
+- Guides: https://chargeguard.net/guides
+- Why Detention Terms Vary By Broker: https://chargeguard.net/why-detention-terms-vary-by-broker
+- How To File A Detention Claim: https://chargeguard.net/how-to-file-a-detention-claim
+- Layover Vs Tonu Vs Lumper Fees: https://chargeguard.net/layover-vs-tonu-vs-lumper-fees
+- How To Avoid Detention Claim Disputes: https://chargeguard.net/how-to-avoid-detention-claim-disputes
+- Detention Pay Rates Owner Operators Small Fleets: https://chargeguard.net/detention-pay-rates-owner-operators-small-fleets
+- Detention Pay Calculator: https://chargeguard.net/detention-pay-calculator
+- Detention Software Comparison: https://chargeguard.net/detention-software-comparison
 - Pricing: https://chargeguard.net/pricing
-- FAQ: https://chargeguard.net/faq
+- Faq: https://chargeguard.net/faq
 - About: https://chargeguard.net/about
 - Contact: https://chargeguard.net/contact
 - Privacy Policy: https://chargeguard.net/privacy-policy
-- Terms of Service: https://chargeguard.net/terms-of-service
-- Cancellation & Refund Policy: https://chargeguard.net/cancellation-refund-policy
+- Terms Of Service: https://chargeguard.net/terms-of-service
+- Cancellation Refund Policy: https://chargeguard.net/cancellation-refund-policy
 - Ownership Statement: https://chargeguard.net/ownership-statement
