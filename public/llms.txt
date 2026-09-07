@@ -11,7 +11,6 @@
 - How To Avoid Detention Claim Disputes: https://chargeguard.net/how-to-avoid-detention-claim-disputes
 - Detention Pay Rates Owner Operators Small Fleets: https://chargeguard.net/detention-pay-rates-owner-operators-small-fleets
 - Detention Pay Calculator: https://chargeguard.net/detention-pay-calculator
-- Detention Software Comparison: https://chargeguard.net/detention-software-comparison
 - Pricing: https://chargeguard.net/pricing
 - Faq: https://chargeguard.net/faq
 - About: https://chargeguard.net/about
@@ -20,3 +19,5 @@
 - Terms Of Service: https://chargeguard.net/terms-of-service
 - Cancellation Refund Policy: https://chargeguard.net/cancellation-refund-policy
 - Ownership Statement: https://chargeguard.net/ownership-statement
+- Content/Why Carriers Dont Collect Detention Pay: https://chargeguard.net/content/why-carriers-dont-collect-detention-pay
+- Compare/Chargeguard Vs Manual Spreadsheet Tracking: https://chargeguard.net/compare/chargeguard-vs-manual-spreadsheet-tracking
