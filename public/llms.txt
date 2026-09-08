@@ -20,5 +20,4 @@
 - Privacy Policy: https://chargeguard.net/privacy-policy
 - Product: https://chargeguard.net/product
 - Terms Of Service: https://chargeguard.net/terms-of-service
-- Use Case/Tms Eld Integration Chargeguard: https://chargeguard.net/use-case/tms-eld-integration-chargeguard
 - Why Detention Terms Vary By Broker: https://chargeguard.net/why-detention-terms-vary-by-broker
