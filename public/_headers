@@ -1,0 +1,7 @@
+# Internal sales-onboarding page only: keep it out of search indexes and caches.
+/sales-onboarding
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Referrer-Policy: no-referrer
+/sales-onboarding.html
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Referrer-Policy: no-referrer
