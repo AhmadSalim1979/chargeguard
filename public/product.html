@@ -40,11 +40,11 @@
       { "@type": "Question", "name": "Does ChargeGuard replace my TMS?", "acceptedAnswer": { "@type": "Answer", "text": "No. ChargeGuard doesn't dispatch loads, manage drivers, or replace the tools you already use to operate. It focuses specifically on the money: what a load should pay, what it actually earned, what got billed, and what's still outstanding." } },
       { "@type": "Question", "name": "How does ChargeGuard know what a load should pay?", "acceptedAnswer": { "@type": "Answer", "text": "You upload or photograph the rate confirmation, and ChargeGuard reads the contracted linehaul, fuel surcharge, mileage, stop-off pay, and the specific accessorial terms for that broker or shipper." } },
       { "@type": "Question", "name": "What counts as the load's earned revenue?", "acceptedAnswer": { "@type": "Answer", "text": "Contracted revenue plus any legitimate additional charges actually earned on that load -- detention, layover, TONU, or lumper reimbursement -- backed by the evidence captured during the trip." } },
-      { "@type": "Question", "name": "Does ChargeGuard determine tax on the invoice?", "acceptedAnswer": { "@type": "Answer", "text": "Where applicable, tax is calculated from stored, effective-dated jurisdiction rules -- a deterministic lookup, not a live tax-research call on every invoice." } },
+      { "@type": "Question", "name": "Does ChargeGuard determine tax on the invoice?", "acceptedAnswer": { "@type": "Answer", "text": "Where supported by ChargeGuard's stored, effective-dated jurisdiction rules, tax is determined automatically -- a deterministic lookup, not a live tax-research call on every invoice. If a narrow scenario is unresolved, ChargeGuard blocks that specific tax component rather than guessing." } },
       { "@type": "Question", "name": "Can ChargeGuard track partial payments and short pays?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Payments can be recorded manually or imported from a bank or factoring CSV, matched to invoices automatically where possible, and a short pay opens a tracked recovery case rather than silently disappearing." } },
-      { "@type": "Question", "name": "Does ChargeGuard contact my broker or shipper directly?", "acceptedAnswer": { "@type": "Answer", "text": "Today, ChargeGuard prepares the completed invoice or claim package for you as soon as it's ready -- evidence attached, terms cited. You review it and confirm sending, and ChargeGuard emails it straight to your own inbox to forward. Direct-to-broker automated sending is a separate capability in controlled testing, not yet available to every account." } },
+      { "@type": "Question", "name": "Does ChargeGuard contact my broker or shipper directly?", "acceptedAnswer": { "@type": "Answer", "text": "ChargeGuard prepares the complete invoice or billing packet as soon as it's ready -- evidence attached, terms cited -- so you have a finished package to review and sign off on. Today, you confirm it and ChargeGuard delivers it to your own inbox to send. Direct-to-broker automated sending is a separate capability in controlled testing, not yet available to every account." } },
       { "@type": "Question", "name": "How much history can I see?", "acceptedAnswer": { "@type": "Answer", "text": "Reports cover a rolling 3-year window, so you can review what's been recovered, billed, and reconciled well beyond a single year." } },
-      { "@type": "Question", "name": "What happens if I need to cancel?", "acceptedAnswer": { "@type": "Answer", "text": "If you cancel, you keep access through the period you've already paid for." } }
+      { "@type": "Question", "name": "What happens if I need to cancel?", "acceptedAnswer": { "@type": "Answer", "text": "If you cancel, you keep access through the period you've already paid for. Cancellation timing for your next billing cycle is governed by our Cancellation & Refund Policy." } }
     ]
   }
   </script>
@@ -174,8 +174,8 @@
   <div class="media-visual"><img src="/assets/about-owner-operator.jpg" alt="An owner-operator reviewing an invoice on a laptop at a desk" loading="lazy"></div>
   <div class="media-copy">
     <p class="eyebrow">5. What Gets Invoiced?</p>
-    <h2>One Complete Invoice, Not a Separate Claim</h2>
-    <p class="section-lede">Contracted freight revenue and every legitimate accessorial charge, combined into one documented invoice or billing packet -- evidence attached, the broker's own terms cited, tax applied where applicable. You review it and confirm, and ChargeGuard emails it straight to your inbox to send.</p>
+    <h2>A Complete Billing Packet, Ready to Review</h2>
+    <p class="section-lede">Contracted freight revenue and every legitimate accessorial charge, combined into one documented invoice or billing packet -- evidence attached, the broker's own terms cited, tax applied where applicable. The moment it's ready, ChargeGuard delivers the complete packet to your inbox for review and sign-off. Direct-to-broker sending is in controlled rollout for select accounts.</p>
   </div>
 </div></section>
 
@@ -202,7 +202,7 @@
 
 <section id="see-it-in-action" class="section section-white"><div class="container narrow section-head centered">
   <h2>See It In Action</h2>
-  <p class="section-lede" style="margin:14px auto 0;">Real screen recordings of ChargeGuard, not mockups. These four walkthroughs show the detention-and-accessorial evidence workflow -- one important piece of the full revenue loop described above, captured before ChargeGuard's broader invoicing, payment, and reconciliation capabilities existed in their current form.</p>
+  <p class="section-lede" style="margin:14px auto 0;">Real screen recordings of ChargeGuard, not mockups. These walkthroughs show the detention-and-accessorial evidence workflow -- one important piece of the full revenue loop described above, captured before ChargeGuard's broader invoicing, payment, and reconciliation capabilities existed in their current form.</p>
 </div>
 <div class="container">
   <div class="video-grid">
@@ -240,18 +240,6 @@
         <div class="video-card-body">
           <h3>The Driver Experience: A Couple of Taps</h3>
           <p>One text message to get set up, a 6-digit PIN, and then just their own assigned trips -- no rates, no invoice amounts. A couple of taps at each stop is the core of the driver's job.</p>
-        </div>
-      </div>
-      <div class="video-card">
-        <div class="video-visual">
-          <video controls preload="none" poster="/assets/videos/claims-tracking-dashboard-demo-poster.jpg" playsinline>
-            <source src="/assets/videos/claims-tracking-dashboard-demo.mp4" type="video/mp4">
-            Your browser doesn't support embedded video. <a href="/assets/videos/claims-tracking-dashboard-demo.mp4">Download the video</a>.
-          </video>
-        </div>
-        <div class="video-card-body">
-          <h3>Tracking a Claim Through to Resolution</h3>
-          <p>An earlier look at claim tracking. The current product tracks the full invoice and payment lifecycle -- this clip is kept as a reference for the detention-claim piece specifically; see the steps above for how billing and payment tracking work today.</p>
         </div>
       </div>
   </div>
@@ -322,17 +310,17 @@
       <details><summary>Does ChargeGuard replace my TMS?</summary><p>No. ChargeGuard doesn't dispatch loads, manage drivers, or replace the tools you already use to operate. It focuses specifically on the money: what a load should pay, what it actually earned, what got billed, and what's still outstanding.</p></details>
       <details><summary>How does ChargeGuard know what a load should pay?</summary><p>You upload or photograph the rate confirmation, and ChargeGuard reads the contracted linehaul, fuel surcharge, mileage, stop-off pay, and the specific accessorial terms for that broker or shipper.</p></details>
       <details><summary>What counts as the load's earned revenue?</summary><p>Contracted revenue plus any legitimate additional charges actually earned on that load -- detention, layover, TONU, or lumper reimbursement -- backed by the evidence captured during the trip.</p></details>
-      <details><summary>Does ChargeGuard determine tax on the invoice?</summary><p>Where applicable, tax is calculated from stored, effective-dated jurisdiction rules -- a deterministic lookup, not a live tax-research call on every invoice.</p></details>
+      <details><summary>Does ChargeGuard determine tax on the invoice?</summary><p>Where supported by ChargeGuard's stored, effective-dated jurisdiction rules, tax is determined automatically -- a deterministic lookup, not a live tax-research call on every invoice. If a narrow scenario is unresolved, ChargeGuard blocks that specific tax component rather than guessing.</p></details>
       <details><summary>Can ChargeGuard track partial payments and short pays?</summary><p>Yes. Payments can be recorded manually or imported from a bank or factoring CSV, matched to invoices automatically where possible, and a short pay opens a tracked recovery case rather than silently disappearing.</p></details>
-      <details><summary>Does ChargeGuard contact my broker or shipper directly?</summary><p>Today, ChargeGuard prepares the completed invoice or claim package for you as soon as it's ready -- evidence attached, terms cited. You review it and confirm sending, and ChargeGuard emails it straight to your own inbox to forward. Direct-to-broker automated sending is a separate capability in controlled testing, not yet available to every account.</p></details>
+      <details><summary>Does ChargeGuard contact my broker or shipper directly?</summary><p>ChargeGuard prepares the complete invoice or billing packet as soon as it's ready -- evidence attached, terms cited -- so you have a finished package to review and sign off on. Today, you confirm it and ChargeGuard delivers it to your own inbox to send. Direct-to-broker automated sending is a separate capability in controlled testing, not yet available to every account.</p></details>
       <details><summary>How much history can I see?</summary><p>Reports cover a rolling 3-year window, so you can review what's been recovered, billed, and reconciled well beyond a single year.</p></details>
-      <details><summary>What happens if I need to cancel?</summary><p>If you cancel, you keep access through the period you've already paid for.</p></details>
+      <details><summary>What happens if I need to cancel?</summary><p>If you cancel, you keep access through the period you've already paid for. Cancellation timing for your next billing cycle is governed by our <a href="/cancellation-refund-policy">Cancellation &amp; Refund Policy</a>.</p></details>
   </div>
 </div></section>
 
 <section id="cta-section" class="section section-dark"><div class="container narrow final-cta">
   <h2>See What Your Loads Are Actually Earning</h2>
-  <p class="section-lede">We onboard new carriers on a rolling basis as capacity opens up.</p>
+  <p class="section-lede">Available now -- no waitlist, no sales call required to get started.</p>
   <a class="btn btn-primary" href="https://app.chargeguard.net/signup">Start Your 30-Day Free Trial</a>
   <p class="hero-note">No credit card required. Cancel anytime. You'll talk to the people who built it -- not a call center.</p>
 </div></section>
