@@ -8,9 +8,13 @@ html { scroll-behavior: smooth; }
   --navy-800: #1A2438;
   --surface-dark: #141C30;
   --border-dark: rgba(255,255,255,0.09);
-  --emerald: #10B981;
-  --emerald-dark: #0B8F63;
-  --emerald-soft: rgba(16,185,129,0.14);
+  /* Brand red sampled directly from logo-mark.png (RGB 234,13,19) --
+     replaces the mismatched emerald-green "Ledger" template accent that
+     this site inherited but that never matched ChargeGuard's actual
+     logo color (2026-11-02, Revenue Assurance repositioning). */
+  --emerald: #E01420;
+  --emerald-dark: #B3101A;
+  --emerald-soft: rgba(224,20,32,0.12);
   --amber: #F5A524;
   --blue: #3B82F6;
   --blue-soft: rgba(59,130,246,0.14);
@@ -58,18 +62,27 @@ a { color: inherit; text-decoration: none; }
 }
 .nav-shell {
   height: 76px; width: min(var(--container), calc(100% - 48px)); margin: 0 auto;
-  display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 28px;
+  display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 20px;
 }
 .brand { display: flex; align-items: center; gap: 10px; font-size: 21px; font-weight: 800; color: var(--white); }
 .brand .brand-mark { color: var(--emerald); }
 .brand .brand-mark-img { height: 60px; width: auto; display: block; }
 .nav-links { display: flex; align-items: center; gap: 28px; color: var(--slate-400); font-size: 14px; font-weight: 600; }
-.nav-links a:hover { color: var(--white); }
-.nav-toggle { display: none; background: none; border: 1px solid var(--border-dark); border-radius: var(--radius-sm); width: 40px; height: 40px; align-items: center; justify-content: center; cursor: pointer; }
-.nav-toggle span { display: block; width: 16px; height: 2px; background: var(--white); position: relative; }
-.nav-toggle span::before, .nav-toggle span::after { content: ""; position: absolute; left: 0; width: 16px; height: 2px; background: var(--white); }
+.nav-links a:hover, .nav-links a.is-active { color: var(--white); }
+.nav-cta { display: flex; align-items: center; gap: 18px; justify-self: end; }
+.nav-signin { font-size: 14px; font-weight: 600; color: var(--slate-400); white-space: nowrap; }
+.nav-signin:hover { color: var(--white); }
+.nav-cta .btn { height: 42px; padding: 0 20px; font-size: 13.5px; white-space: nowrap; }
+.nav-toggle {
+  display: none; background: none; border: 1px solid var(--border-dark); border-radius: var(--radius-sm);
+  width: 40px; height: 40px; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0;
+}
+.nav-toggle span { display: block; width: 16px; height: 2px; background: var(--white); position: relative; transition: transform 0.2s ease, opacity 0.2s ease; }
+.nav-toggle span::before, .nav-toggle span::after { content: ""; position: absolute; left: 0; width: 16px; height: 2px; background: var(--white); transition: transform 0.2s ease, opacity 0.2s ease; }
 .nav-toggle span::before { top: -5px; } .nav-toggle span::after { top: 5px; }
-.nav-cta { justify-self: end; }
+.nav-toggle[aria-expanded="true"] span { background: transparent; }
+.nav-toggle[aria-expanded="true"] span::before { top: 0; transform: rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span::after { top: 0; transform: rotate(-45deg); }
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -77,8 +90,8 @@ a { color: inherit; text-decoration: none; }
   padding: 0 26px; height: 50px; border-radius: var(--radius-pill);
   font-weight: 700; font-size: 15px; border: none; cursor: pointer;
 }
-.btn-primary { background: var(--emerald); color: var(--navy-950); }
-.btn-primary:hover { background: #14C78F; }
+.btn-primary { background: var(--emerald); color: var(--white); }
+.btn-primary:hover { background: var(--emerald-dark); }
 .btn-secondary { background: transparent; color: var(--white); border: 1px solid var(--border-dark); }
 .btn-secondary:hover { border-color: var(--emerald); color: var(--emerald); }
 .btn-light { background: var(--slate-900); color: var(--white); }
@@ -95,9 +108,9 @@ a { color: inherit; text-decoration: none; }
   display: inline-flex; align-items: center; gap: 8px; width: fit-content;
   padding: 7px 14px; margin-bottom: 20px; border-radius: var(--radius-pill);
   font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
-  background: var(--emerald-soft); color: var(--emerald); border: 1px solid rgba(16,185,129,0.28);
+  background: var(--emerald-soft); color: var(--emerald); border: 1px solid rgba(224,20,32,0.28);
 }
-.section-dark .eyebrow, .section-darker .eyebrow { color: #34E4A8; }
+.section-dark .eyebrow, .section-darker .eyebrow { color: #FF6B6F; }
 
 .section-lede { font-size: 17px; color: var(--slate-700); max-width: 640px; }
 .section-dark .section-lede, .section-darker .section-lede { color: var(--slate-400); }
@@ -255,7 +268,7 @@ a { color: inherit; text-decoration: none; }
 .price-card.featured { border: 2px solid var(--emerald); position: relative; }
 .price-tag {
   position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
-  background: var(--emerald); color: var(--navy-950); font-size: 11px; font-weight: 800;
+  background: var(--emerald); color: var(--white); font-size: 11px; font-weight: 800;
   padding: 5px 14px; border-radius: var(--radius-pill); letter-spacing: 0.04em; text-transform: uppercase;
 }
 .price-card h3 { margin-bottom: 6px; }
@@ -423,13 +436,48 @@ body.waitlist-modal-open { overflow: hidden; }
   .process-connector { display: none; }
 }
 
+/* ---------- Revenue loop (homepage lifecycle diagram) ---------- */
+.revenue-loop { display: flex; align-items: stretch; justify-content: center; gap: 4px; margin: 0 auto; max-width: 980px; flex-wrap: wrap; }
+.revenue-loop-step {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px;
+  background: var(--surface-dark); border: 1px solid var(--border-dark); border-radius: var(--radius-md);
+  padding: 18px 14px; width: 142px; flex-shrink: 0;
+}
+.revenue-loop-step .loop-num {
+  width: 28px; height: 28px; border-radius: 50%; background: var(--emerald-soft); color: var(--emerald);
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px;
+}
+.revenue-loop-step strong { font-size: 13.5px; color: var(--white); line-height: 1.3; }
+.revenue-loop-step span { font-size: 12px; color: var(--slate-400); line-height: 1.4; }
+.revenue-loop-arrow { align-self: center; color: var(--slate-400); font-size: 18px; flex-shrink: 0; padding-top: 32px; }
+.revenue-loop-exceptions { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 28px; }
+.revenue-loop-exceptions .tag-label { font-size: 12px; font-weight: 700; color: var(--slate-400); text-transform: uppercase; letter-spacing: 0.04em; margin-right: 4px; }
+.loop-exception-pill {
+  font-size: 12.5px; font-weight: 700; padding: 7px 14px; border-radius: var(--radius-pill);
+  background: rgba(255,255,255,0.06); color: var(--slate-400); border: 1px solid var(--border-dark);
+}
+@media (max-width: 860px) {
+  .revenue-loop { flex-direction: column; align-items: center; }
+  .revenue-loop-step { width: 100%; max-width: 320px; }
+  .revenue-loop-arrow { transform: rotate(90deg); padding-top: 0; }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   h1 { font-size: 38px; }
   h2 { font-size: 28px; }
   .hero-grid, .card-grid, .steps, .footer-grid, .pricing-grid, .contact-grid { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
-  .nav-toggle { display: flex; }
+  .nav-shell { grid-template-columns: auto 1fr; }
+  .nav-links {
+    display: none; position: absolute; top: 76px; left: 0; right: 0;
+    flex-direction: column; align-items: stretch; gap: 0;
+    background: var(--navy-950); border-bottom: 1px solid var(--border-dark);
+    padding: 8px 0 14px;
+  }
+  .nav-links.is-open { display: flex; }
+  .nav-links a { padding: 14px max(24px, calc((100% - min(var(--container), 100%)) / 2 + 24px)); }
+  .nav-cta { display: none; }
+  .nav-toggle { display: flex; justify-self: end; }
   .dash-metrics { grid-template-columns: repeat(2, 1fr); }
   .section { padding: 32px 0; }
   .workflow-diagram { flex-direction: column; align-items: center; }

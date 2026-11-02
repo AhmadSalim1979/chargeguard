@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing — ChargeGuard Detention & Accessorial Charge</title>
-  <meta name="description" content="Founding Pricing for ChargeGuard's detention and accessorial charge recovery platform -- Starter, Small Fleet, Growth and Scale plans for US trucking carriers, price locked for your first 12 months." />
+  <title>Pricing — ChargeGuard Revenue Assurance</title>
+  <meta name="description" content="Founding Pricing for ChargeGuard's revenue assurance platform -- Starter, Small Fleet, Growth and Scale plans for US trucking carriers, price locked for your first 12 months." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://chargeguard.net/pricing">
-  <meta property="og:title" content="Pricing — ChargeGuard Detention & Accessorial Charge">
-  <meta property="og:description" content="Founding Pricing for ChargeGuard's detention and accessorial charge recovery platform -- Starter, Small Fleet, Growth and Scale plans for US trucking carriers, price locked for your first 12 months.">
+  <meta property="og:title" content="Pricing — ChargeGuard Revenue Assurance">
+  <meta property="og:description" content="Founding Pricing for ChargeGuard's revenue assurance platform -- Starter, Small Fleet, Growth and Scale plans for US trucking carriers, price locked for your first 12 months.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://chargeguard.net/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -27,7 +27,7 @@
     "@type": "Organization",
     "name": "ChargeGuard",
     "url": "https://chargeguard.net/",
-    "description": "ChargeGuard -- automated detention and accessorial charge recovery for small-to-midsize US trucking carriers.",
+    "description": "ChargeGuard -- revenue assurance for small-to-midsize US trucking carriers, from the rate confirmation to reconciled payment.",
     "brand": { "@type": "Brand", "name": "ChargeGuard" },
     "parentOrganization": { "@type": "Organization", "name": "Qiyadon", "url": "https://qiyadon.com/" }
   }
@@ -38,10 +38,10 @@
     "@type": "SoftwareApplication",
     "name": "ChargeGuard",
     "applicationCategory": "BusinessApplication",
-    "applicationSubCategory": "Detention and Accessorial Charge Recovery Software",
+    "applicationSubCategory": "Revenue Assurance and Freight Invoicing Software",
     "operatingSystem": "Web, iOS, Android",
     "url": "https://chargeguard.net/pricing",
-    "description": "ChargeGuard documents timestamped evidence and automatically generates claims for detention and accessorial charges owed to small-to-midsize US trucking carriers, applying each broker or shipper's actual agreed free-time and rate terms instead of a generic default.",
+    "description": "ChargeGuard reads a carrier's rate confirmation, builds the complete freight and accessorial invoice from what the load actually earned, and tracks payment through to reconciliation -- for small-to-midsize US trucking carriers.",
     "offers": {
       "@type": "AggregateOffer",
       "priceCurrency": "USD",
@@ -62,17 +62,23 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
+      { "@type": "Question", "name": "What's included in each plan?", "acceptedAnswer": { "@type": "Answer", "text": "The full product -- rate-confirmation reading, freight and accessorial invoicing, payment tracking, and short-pay detection. Plans differ by fleet size, not by withholding features." } },
+      { "@type": "Question", "name": "Do I need a card for the trial?", "acceptedAnswer": { "@type": "Answer", "text": "No. The 30-day trial starts at signup with no credit card required." } },
+      { "@type": "Question", "name": "Is there a contract?", "acceptedAnswer": { "@type": "Answer", "text": "No. ChargeGuard is month-to-month with no long-term contract." } },
       { "@type": "Question", "name": "Is pricing really locked in?", "acceptedAnswer": { "@type": "Answer", "text": "Yes -- Founding Pricing locks in your rate for your first 12 months on ChargeGuard, even if public pricing changes later." } },
       { "@type": "Question", "name": "Do I need any special hardware or software to use ChargeGuard?", "acceptedAnswer": { "@type": "Answer", "text": "No, the core product works with manual entry and the driver app alone -- nothing else to install or connect." } },
+      { "@type": "Question", "name": "What counts as a truck for fleet-size purposes?", "acceptedAnswer": { "@type": "Answer", "text": "The number of active power units/trucks your carrier operates, self-declared at signup." } },
+      { "@type": "Question", "name": "What happens after 30 days?", "acceptedAnswer": { "@type": "Answer", "text": "You choose a plan based on your fleet size to continue. There's no automatic charge -- you confirm before any subscription begins." } },
       { "@type": "Question", "name": "What happens if my fleet grows into a larger tier's truck range?", "acceptedAnswer": { "@type": "Answer", "text": "Contact us to move to the right plan at your next renewal. There are no surprise mid-cycle charges." } },
       { "@type": "Question", "name": "How are the tiers decided?", "acceptedAnswer": { "@type": "Answer", "text": "Tiers are based on the truck count you declare at signup." } },
-      { "@type": "Question", "name": "Why do free-time and rates differ from one broker or shipper to another, and how does ChargeGuard handle that?", "acceptedAnswer": { "@type": "Answer", "text": "Each customer's agreed terms are stored once and applied automatically to every future claim for that customer, instead of using one generic rule for everyone." } },
-      { "@type": "Question", "name": "What happens if I need to cancel?", "acceptedAnswer": { "@type": "Answer", "text": "If you cancel, you keep access through the period you've already paid for -- you're never cut off early." } }
+      { "@type": "Question", "name": "Why do free-time and accessorial rates differ from one broker or shipper to another, and how does ChargeGuard handle that?", "acceptedAnswer": { "@type": "Answer", "text": "Each broker or shipper's agreed terms are stored once and applied automatically to every future invoice with them, instead of using one generic rule for everyone." } },
+      { "@type": "Question", "name": "Can I cancel?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, any time. If you cancel, you keep access through the period you've already paid for -- you're never cut off early." } }
     ]
   }
   </script>
   <script defer src="https://analytics.chargeguard.net/script.js" data-website-id="e1aefa57-5c62-4101-aeff-b0b69da52fd2"></script>
   <script defer src="/assets/utm-signup-passthrough.js"></script>
+  <script defer src="/assets/site.js"></script>
 </head>
 <body>
 <header class="site-header" data-header>
@@ -80,17 +86,21 @@
     <a href="/" class="brand"><img src="/logo-mark.png" alt="ChargeGuard by Qiyadon" class="brand-mark-img"></a>
     <nav class="nav-links" data-nav>
         <a href="/product">Product</a>
-        <a href="/guides">Guides</a>
         <a href="/pricing">Pricing</a>
+        <a href="/guides">Guides</a>
         <a href="/faq">FAQ</a>
         <a href="/about">About</a>
-        <a href="/contact">Contact</a>
     </nav>
+    <div class="nav-cta">
+      <a href="https://app.chargeguard.net/login" class="nav-signin">Sign In</a>
+      <a href="https://app.chargeguard.net/signup" class="btn btn-primary" data-umami-event="cta_click" data-umami-event-cta="nav_start_trial">Start Free Trial</a>
+    </div>
+    <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
 <section id="pricing" class="section section-light"><div class="container narrow section-head centered">
-  <h1>Simple, size-based pricing</h1>
-  <p class="section-lede" style="margin:14px auto 0;">Every tier calculates claims against each broker/shipper's own actual terms</p>
+  <h1>Simple, Size-Based Pricing</h1>
+  <p class="section-lede" style="margin:14px auto 0;">Every tier gets the full revenue-assurance product -- rate confirmation to reconciled payment.</p>
 </div>
 <div class="container">
   <p class="section-lede centered" style="margin:0 auto 10px; max-width:640px;">Month-to-month. No contract, no sales calls, no long-term commitment -- cancel anytime. You'll talk directly to the people who built ChargeGuard, not a call center.</p>
@@ -101,28 +111,28 @@
         <h3>Starter</h3>
         <p class="price-truck-range">1-5 trucks</p>
         <p class="price-amount"><strong>$17</strong><span>/month</span></p>
-        <ul><li>Tracks every shipper and broker's own actual terms, applied automatically to every claim</li><li>Unlimited detention/accessorial claim letters</li><li>Manual entry or the driver app for load timestamps</li><li>Reports and Excel export, rolling 3-year history</li></ul>
+        <ul><li>Rate-confirmation reading, full freight + accessorial invoicing</li><li>Payment tracking and short-pay detection</li><li>Manual entry or the driver app for load timestamps</li><li>Reports and Excel export, rolling 3-year history</li></ul>
       </div>
       <div class="price-card">
 
         <h3>Small Fleet</h3>
         <p class="price-truck-range">6-15 trucks</p>
         <p class="price-amount"><strong>$39</strong><span>/month</span></p>
-        <ul><li>Tracks every shipper and broker's own actual terms, applied automatically to every claim</li><li>Everything in Starter</li></ul>
+        <ul><li>Everything in Starter</li><li>Same full product, sized for a growing fleet</li></ul>
       </div>
       <div class="price-card featured">
         <span class="price-tag">Most Popular</span>
         <h3>Growth</h3>
         <p class="price-truck-range">16-50 trucks</p>
         <p class="price-amount"><strong>$79</strong><span>/month</span></p>
-        <ul><li>Tracks every shipper and broker's own actual terms, applied automatically to every claim</li><li>Everything in Small Fleet</li><li>Built for fleets with a dedicated dispatcher</li></ul>
+        <ul><li>Everything in Small Fleet</li><li>Built for fleets with a dedicated dispatcher</li></ul>
       </div>
       <div class="price-card">
 
         <h3>Scale</h3>
         <p class="price-truck-range">51-150 trucks</p>
         <p class="price-amount"><strong>$149</strong><span>/month</span></p>
-        <ul><li>Tracks every shipper and broker's own actual terms, applied automatically to every claim</li><li>Everything in Growth</li><li>Built for larger small-to-midsize fleets</li></ul>
+        <ul><li>Everything in Growth</li><li>Built for larger small-to-midsize fleets</li></ul>
       </div>
       <div class="price-card">
 
@@ -132,7 +142,7 @@
         <ul><li>Everything in Scale</li><li>Custom pricing for larger fleets</li><li>Dedicated onboarding</li></ul>
       </div>
   </div>
-  <div class="centered" style="margin-top:36px;"><a class="btn btn-primary" href="https://app.chargeguard.net/signup" data-umami-event="cta_click" data-umami-event-cta="start_trial_top" data-umami-event-page="pricing">Start Your Free 30-Day Trial</a><p class="hero-note" style="margin-top:12px;">No credit card required.</p></div>
+  <div class="centered" style="margin-top:36px;"><a class="btn btn-primary" href="https://app.chargeguard.net/signup" data-umami-event="cta_click" data-umami-event-cta="start_trial_top" data-umami-event-page="pricing">Start Your 30-Day Free Trial</a><p class="hero-note" style="margin-top:12px;">No credit card required.</p></div>
 </div></section>
 <section id="calculator-callout" class="section section-white"><div class="container narrow centered">
   <h3 style="font-size:19px; margin:0 0 10px;">Want to put a number on this?</h3>
@@ -144,18 +154,23 @@
 </div>
 <div class="container narrow">
   <div class="faq-list">
+      <details><summary>What's included in each plan?</summary><p>The full product -- rate-confirmation reading, freight and accessorial invoicing, payment tracking, and short-pay detection. Plans differ by fleet size, not by withholding features.</p></details>
+      <details><summary>Do I need a card for the trial?</summary><p>No. The 30-day trial starts at signup with no credit card required.</p></details>
+      <details><summary>Is there a contract?</summary><p>No. ChargeGuard is month-to-month with no long-term contract.</p></details>
       <details><summary>Is pricing really locked in?</summary><p>Yes -- Founding Pricing locks in your rate for your first 12 months on ChargeGuard, even if public pricing changes later.</p></details>
       <details><summary>Do I need any special hardware or software to use ChargeGuard?</summary><p>No, the core product works with manual entry and the driver app alone -- nothing else to install or connect.</p></details>
+      <details><summary>What counts as a truck for fleet-size purposes?</summary><p>The number of active power units/trucks your carrier operates, self-declared at signup.</p></details>
+      <details><summary>What happens after 30 days?</summary><p>You choose a plan based on your fleet size to continue. There's no automatic charge -- you confirm before any subscription begins.</p></details>
       <details><summary>What happens if my fleet grows into a larger tier's truck range?</summary><p>Contact us to move to the right plan at your next renewal. There are no surprise mid-cycle charges.</p></details>
       <details><summary>How are the tiers decided?</summary><p>Tiers are based on the truck count you declare at signup.</p></details>
-      <details><summary>Why do free-time and rates differ from one broker or shipper to another, and how does ChargeGuard handle that?</summary><p>Each customer's agreed terms are stored once and applied automatically to every future claim for that customer, instead of using one generic rule for everyone.</p></details>
-      <details><summary>What happens if I need to cancel?</summary><p>If you cancel, you keep access through the period you've already paid for -- you're never cut off early.</p></details>
+      <details><summary>Why do free-time and accessorial rates differ from one broker or shipper to another, and how does ChargeGuard handle that?</summary><p>Each broker or shipper's agreed terms are stored once and applied automatically to every future invoice with them, instead of using one generic rule for everyone.</p></details>
+      <details><summary>Can I cancel?</summary><p>Yes, any time. If you cancel, you keep access through the period you've already paid for -- you're never cut off early.</p></details>
   </div>
 </div></section>
 <section id="cta-section" class="section section-dark"><div class="container narrow final-cta">
-  <h2>Ready to Recover What You're Owed?</h2>
-  <p class="section-lede">ChargeGuard offers simple, size-based pricing with no long-term commitment. Get started today and begin capturing your rightful detention and accessorial charges.</p>
-  <a class="btn btn-primary" href="https://app.chargeguard.net/signup" data-umami-event="cta_click" data-umami-event-cta="start_trial_footer" data-umami-event-page="pricing">Start Your Free 30-Day Trial</a>
+  <h2>Know Where Your Money Stands</h2>
+  <p class="section-lede">Simple, size-based pricing with no long-term commitment. Start today and get the full revenue-assurance product from day one.</p>
+  <a class="btn btn-primary" href="https://app.chargeguard.net/signup" data-umami-event="cta_click" data-umami-event-cta="start_trial_footer" data-umami-event-page="pricing">Start Your 30-Day Free Trial</a>
   <p class="hero-note">No credit card required. Cancel anytime. You'll talk to the people who built it -- not a call center.</p>
 </div></section>
 <footer class="site-footer">
@@ -163,14 +178,14 @@
     <div class="footer-grid">
       <div>
         <img src="/logo-text-mark.png" alt="ChargeGuard by Qiyadon" class="footer-brand-img">
-        <p>ChargeGuard by Qiyadon -- automated detention and accessorial charge recovery for small-to-midsize US trucking carriers.</p>
+        <p>ChargeGuard by Qiyadon -- revenue assurance for small-to-midsize US trucking carriers, from rate confirmation to reconciled payment.</p>
       </div>
       <div class="footer-spacer" aria-hidden="true"></div>
       <div class="footer-col">
         <h4>Navigate</h4>
         <a href="/product">Product</a>
-        <a href="/guides">Guides</a>
         <a href="/pricing">Pricing</a>
+        <a href="/guides">Guides</a>
         <a href="/faq">FAQ</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
@@ -184,7 +199,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Qiyadon. ChargeGuard -- automated detention and accessorial charge recovery.</span>
+      <span>&copy; 2026 Qiyadon. ChargeGuard -- revenue assurance for small carriers.</span>
     </div>
   </div>
 </footer>

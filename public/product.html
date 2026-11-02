@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How ChargeGuard Works — Detention Pay Software Walkthrough</title>
-  <meta name="description" content="See exactly how ChargeGuard captures, documents, and recovers detention and accessorial charges for small-to-midsize US trucking carriers -- real screen" />
+  <title>How ChargeGuard Works — Revenue Assurance Walkthrough</title>
+  <meta name="description" content="From the rate confirmation to reconciled payment: see exactly how ChargeGuard determines what a load should pay, bills what it earned, and tracks what's still missing." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://chargeguard.net/product">
-  <meta property="og:title" content="How ChargeGuard Works — Detention Pay Software Walkthrough">
-  <meta property="og:description" content="See exactly how ChargeGuard captures, documents, and recovers detention and accessorial charges for small-to-midsize US trucking carriers -- real screen">
+  <meta property="og:title" content="How ChargeGuard Works — Revenue Assurance Walkthrough">
+  <meta property="og:description" content="From the rate confirmation to reconciled payment: see exactly how ChargeGuard determines what a load should pay, bills what it earned, and tracks what's still missing.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://chargeguard.net/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -27,7 +27,7 @@
     "@type": "Organization",
     "name": "ChargeGuard",
     "url": "https://chargeguard.net/",
-    "description": "ChargeGuard -- automated detention and accessorial charge recovery for small-to-midsize US trucking carriers.",
+    "description": "ChargeGuard -- revenue assurance for small-to-midsize US trucking carriers, from the rate confirmation to reconciled payment.",
     "brand": { "@type": "Brand", "name": "ChargeGuard" },
     "parentOrganization": { "@type": "Organization", "name": "Qiyadon", "url": "https://qiyadon.com/" }
   }
@@ -37,15 +37,14 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "How does ChargeGuard capture and document detention/accessorial time?", "acceptedAnswer": { "@type": "Answer", "text": "ChargeGuard captures detention and accessorial time from driver/dispatcher-submitted timestamps -- your driver taps Start and Stop in the app at each stop, or a dispatcher enters times by hand -- then applies the specific free-time and accessorial terms that apply to each load. This generates a documented claim or invoice ready for submission." } },
-      { "@type": "Question", "name": "Do I need any special hardware or software to use ChargeGuard?", "acceptedAnswer": { "@type": "Answer", "text": "No. ChargeGuard is designed to work from carrier-uploaded documentation, manual entry, or the driver app -- nothing else to install or connect." } },
-      { "@type": "Question", "name": "How does ChargeGuard establish accuracy for claims that might be disputed?", "acceptedAnswer": { "@type": "Answer", "text": "ChargeGuard uses timestamped evidence from driver/dispatcher inputs, plus any photos of lumper receipts or detention proof attached at each stop, to create a documented claim. This evidence is applied against the specific terms of each broker or shipper to ensure accuracy and provide a clear basis for claims." } },
-      { "@type": "Question", "name": "Is ChargeGuard worth it for small fleets specifically?", "acceptedAnswer": { "@type": "Answer", "text": "ChargeGuard is specifically designed for small-to-midsize carriers (1-200 trucks), helping them recover detention and accessorial charges they might otherwise miss due to manual tracking challenges. It offers a cost-effective solution tailored to their needs." } },
-      { "@type": "Question", "name": "How is ChargeGuard different from tracking detention on paper or in a spreadsheet?", "acceptedAnswer": { "@type": "Answer", "text": "ChargeGuard turns a driver's tap and the broker's own terms into an automatic calculation and a documented claim, reducing manual effort and increasing accuracy. Unlike manual tracking methods, nothing has to be reconstructed from memory or re-typed into a spreadsheet." } },
-      { "@type": "Question", "name": "Does ChargeGuard contact my broker or shipper directly?", "acceptedAnswer": { "@type": "Answer", "text": "Today, ChargeGuard prepares the completed claim package for you (the dispatcher) as soon as it's ready -- evidence attached, terms cited. You review it and confirm sending, and ChargeGuard emails it straight to your own inbox to forward. Direct-to-broker automated sending is a separate capability in controlled testing, not yet available to every account." } },
-      { "@type": "Question", "name": "How much claim history can I see?", "acceptedAnswer": { "@type": "Answer", "text": "Reports cover a rolling 3-year window, so you can review what's been recovered and what's still outstanding well beyond a single year." } },
-      { "@type": "Question", "name": "What happens if I need to cancel?", "acceptedAnswer": { "@type": "Answer", "text": "If you cancel, you keep access through the period you've already paid for." } },
-      { "@type": "Question", "name": "How can I learn more about ChargeGuard?", "acceptedAnswer": { "@type": "Answer", "text": "For more information, visit our homepage or contact us directly. We're here to answer any questions you may have about how ChargeGuard can benefit your fleet." } }
+      { "@type": "Question", "name": "Does ChargeGuard replace my TMS?", "acceptedAnswer": { "@type": "Answer", "text": "No. ChargeGuard doesn't dispatch loads, manage drivers, or replace the tools you already use to operate. It focuses specifically on the money: what a load should pay, what it actually earned, what got billed, and what's still outstanding." } },
+      { "@type": "Question", "name": "How does ChargeGuard know what a load should pay?", "acceptedAnswer": { "@type": "Answer", "text": "You upload or photograph the rate confirmation, and ChargeGuard reads the contracted linehaul, fuel surcharge, mileage, stop-off pay, and the specific accessorial terms for that broker or shipper." } },
+      { "@type": "Question", "name": "What counts as the load's earned revenue?", "acceptedAnswer": { "@type": "Answer", "text": "Contracted revenue plus any legitimate additional charges actually earned on that load -- detention, layover, TONU, or lumper reimbursement -- backed by the evidence captured during the trip." } },
+      { "@type": "Question", "name": "Does ChargeGuard determine tax on the invoice?", "acceptedAnswer": { "@type": "Answer", "text": "Where applicable, tax is calculated from stored, effective-dated jurisdiction rules -- a deterministic lookup, not a live tax-research call on every invoice." } },
+      { "@type": "Question", "name": "Can ChargeGuard track partial payments and short pays?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Payments can be recorded manually or imported from a bank or factoring CSV, matched to invoices automatically where possible, and a short pay opens a tracked recovery case rather than silently disappearing." } },
+      { "@type": "Question", "name": "Does ChargeGuard contact my broker or shipper directly?", "acceptedAnswer": { "@type": "Answer", "text": "Today, ChargeGuard prepares the completed invoice or claim package for you as soon as it's ready -- evidence attached, terms cited. You review it and confirm sending, and ChargeGuard emails it straight to your own inbox to forward. Direct-to-broker automated sending is a separate capability in controlled testing, not yet available to every account." } },
+      { "@type": "Question", "name": "How much history can I see?", "acceptedAnswer": { "@type": "Answer", "text": "Reports cover a rolling 3-year window, so you can review what's been recovered, billed, and reconciled well beyond a single year." } },
+      { "@type": "Question", "name": "What happens if I need to cancel?", "acceptedAnswer": { "@type": "Answer", "text": "If you cancel, you keep access through the period you've already paid for." } }
     ]
   }
   </script>
@@ -53,8 +52,8 @@
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "From a Photo to a Paid Claim — ChargeGuard Walkthrough",
-    "description": "A real screen-recorded walkthrough of ChargeGuard: photograph a rate confirmation, or upload it straight from the office, and ChargeGuard reads it automatically; the driver taps Start and Stop from the mobile app and can snap Lumper receipts or detention evidence photos right from the app; ChargeGuard applies the broker's actual contract terms and calculates the detention owed, and a documented claim is generated and tracked through to paid.",
+    "name": "From a Rate Confirmation to a Tracked Claim — ChargeGuard Walkthrough",
+    "description": "A real screen-recorded walkthrough: photograph a rate confirmation, or upload it straight from the office, and ChargeGuard reads it automatically; the driver taps Start and Stop from the mobile app and can snap lumper receipts or detention evidence photos right from the app; ChargeGuard applies the broker's actual contract terms and calculates what's owed, and a documented claim is generated and tracked.",
     "thumbnailUrl": ["https://chargeguard.net/assets/videos/photo-to-paid-claim-demo-poster.jpg"],
     "uploadDate": "2026-08-08T00:00:00Z",
     "duration": "PT1M14S",
@@ -88,21 +87,9 @@
     "embedUrl": "https://chargeguard.net/product#see-it-in-action"
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "VideoObject",
-    "name": "Never Lose Track of a Claim — ChargeGuard Walkthrough",
-    "description": "A real screen-recorded walkthrough of the ChargeGuard claims list and dashboard: every claim generated is tracked in one place through draft, sent, paid, and disputed, and a status can be updated in one click -- so a carrier always knows exactly what's been recovered and what's still outstanding.",
-    "thumbnailUrl": ["https://chargeguard.net/assets/videos/claims-tracking-dashboard-demo-poster.jpg"],
-    "uploadDate": "2026-08-05T00:00:00Z",
-    "duration": "PT47S",
-    "contentUrl": "https://chargeguard.net/assets/videos/claims-tracking-dashboard-demo.mp4",
-    "embedUrl": "https://chargeguard.net/product#see-it-in-action"
-  }
-  </script>
   <script defer src="https://analytics.chargeguard.net/script.js" data-website-id="e1aefa57-5c62-4101-aeff-b0b69da52fd2"></script>
   <script defer src="/assets/utm-signup-passthrough.js"></script>
+  <script defer src="/assets/site.js"></script>
 </head>
 <body>
 <header class="site-header" data-header>
@@ -110,22 +97,112 @@
     <a href="/" class="brand"><img src="/logo-mark.png" alt="ChargeGuard by Qiyadon" class="brand-mark-img"></a>
     <nav class="nav-links" data-nav>
         <a href="/product">Product</a>
-        <a href="/guides">Guides</a>
         <a href="/pricing">Pricing</a>
+        <a href="/guides">Guides</a>
         <a href="/faq">FAQ</a>
         <a href="/about">About</a>
-        <a href="/contact">Contact</a>
     </nav>
+    <div class="nav-cta">
+      <a href="https://app.chargeguard.net/login" class="nav-signin">Sign In</a>
+      <a href="https://app.chargeguard.net/signup" class="btn btn-primary" data-umami-event="cta_click" data-umami-event-cta="nav_start_trial">Start Free Trial</a>
+    </div>
+    <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
+
 <section id="intro" class="section-light"><div class="container narrow content-page">
-  <h1>ChargeGuard: Automated Detention & Accessorial Charge Recovery for Small-to-Midsize Carriers</h1>
-  <p class="page-lede">ChargeGuard is an automated detention and accessorial charge recovery platform designed specifically for small-to-midsize US trucking carriers. If you're an owner-operator or run a fleet of up to 200 trucks, ChargeGuard turns the timestamped evidence you already have into documented, submission-ready claims—so you can stop relying on dispatchers reconstructing detention from memory after the fact.</p>
-  <h2>Turn Existing Evidence Into Claims Automatically</h2><p>Your driver already generates this data every time they check in and check out—it just needs to be captured the moment it happens, not reconstructed from memory afterward. ChargeGuard's driver app captures arrival and departure with a tap, applies the specific free-time and accessorial terms for each load, broker, or shipper, then generates a documented claim or invoice ready for submission. No more manual reconstruction, no more missed charges.</p>
+  <p class="eyebrow">Revenue assurance, start to finish</p>
+  <h1>Every Load, Followed From the Rate Con to Reconciled Payment</h1>
+  <p class="page-lede">ChargeGuard is built around one question: did this load earn what it should have, and did you actually get paid for it? Below is the real lifecycle it tracks for every load -- what should happen, what actually happened, what got billed, and what's still open.</p>
 </div></section>
+
+<section id="should-pay" class="section section-white media-feature-section"><div class="container media-feature-grid">
+  <div class="media-visual"><img src="/assets/guide-broker-terms.jpg" alt="A driver reviewing a rate confirmation on a clipboard beside the truck" loading="lazy"></div>
+  <div class="media-copy">
+    <p class="eyebrow">1. What Should This Load Pay?</p>
+    <h2>Read Straight From the Rate Confirmation</h2>
+    <p class="section-lede">Upload it or photograph it, and ChargeGuard reads the contracted linehaul, fuel surcharge, mileage, stop-off pay, and any other legitimate contractual components where supported -- plus the specific broker or shipper's accessorial terms. Stored once per broker, applied automatically to every future load with them, instead of a generic default.</p>
+  </div>
+</div></section>
+
+<section id="actually-happened" class="section section-light media-feature-section reverse"><div class="container media-feature-grid">
+  <div class="media-visual"><img src="/assets/guide-file-claim.jpg" alt="A driver photographing evidence at the loading dock with a phone" loading="lazy"></div>
+  <div class="media-copy">
+    <p class="eyebrow">2. What Actually Happened?</p>
+    <h2>Captured as It Happens, Not Reconstructed Later</h2>
+    <p class="section-lede">Your driver taps Start and Stop at each stop from the ChargeGuard app -- arrival, departure, proof of delivery. Detention evidence and lumper receipts get photographed right from the app. A dispatcher can also enter or adjust times by hand. Nothing waits until someone remembers it at the end of the week.</p>
+  </div>
+</div></section>
+
+<section id="what-earned" class="section section-white"><div class="container narrow section-head centered">
+  <p class="eyebrow">3. What Did the Load Earn?</p>
+  <h2>Contracted Revenue, Plus Every Legitimate Extra</h2>
+  <p class="section-lede" style="margin:14px auto 0;">ChargeGuard combines the contracted amount with any detention, layover, TONU, or lumper reimbursement actually earned on the load -- each one backed by its own evidence and the broker's own terms, not a flat assumption.</p>
+</div>
+<div class="container">
+  <div class="card-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>Detention</h3>
+        <p>Time waited past the broker's own free-time allowance, at that broker's own hourly rate.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+        <h3>Layover</h3>
+        <p>Held overnight or an extended wait, billed at that broker's flat layover rate.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></div>
+        <h3>TONU</h3>
+        <p>A scheduled pickup cancelled after dispatch, billed per that broker's own TONU terms.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><circle cx="8" cy="11" r="0.5" fill="currentColor"/><circle cx="12" cy="11" r="0.5" fill="currentColor"/><circle cx="16" cy="11" r="0.5" fill="currentColor"/></svg></div>
+        <h3>Lumper</h3>
+        <p>Third-party dock labor the driver paid for, reimbursed per the broker's policy, receipt attached.</p>
+      </div>
+  </div>
+</div></section>
+
+<section id="ready-to-bill" class="section section-light"><div class="container narrow section-head centered">
+  <p class="eyebrow">4. Is It Ready to Bill?</p>
+  <h2>Integrity Checks Before Anything Goes Out</h2>
+  <p class="section-lede" style="margin:14px auto 0;">Before an invoice is generated, ChargeGuard confirms the required documentation and terms are actually in place -- and where applicable, determines tax from stored, effective-dated jurisdiction rules, not a live lookup on every invoice. Anything genuinely missing is surfaced as an Action Needed item instead of silently skipped.</p>
+</div></section>
+
+<section id="gets-invoiced" class="section section-white media-feature-section"><div class="container media-feature-grid">
+  <div class="media-visual"><img src="/assets/about-owner-operator.jpg" alt="An owner-operator reviewing an invoice on a laptop at a desk" loading="lazy"></div>
+  <div class="media-copy">
+    <p class="eyebrow">5. What Gets Invoiced?</p>
+    <h2>One Complete Invoice, Not a Separate Claim</h2>
+    <p class="section-lede">Contracted freight revenue and every legitimate accessorial charge, combined into one documented invoice or billing packet -- evidence attached, the broker's own terms cited, tax applied where applicable. You review it and confirm, and ChargeGuard emails it straight to your inbox to send.</p>
+  </div>
+</div></section>
+
+<section id="what-paid" class="section section-light media-feature-section reverse"><div class="container media-feature-grid">
+  <div class="media-visual"><img src="/assets/claims-review.jpg" alt="A dispatcher reviewing payment status on a laptop" loading="lazy"></div>
+  <div class="media-copy">
+    <p class="eyebrow">6. What Did They Pay?</p>
+    <h2>Receivable Tracking, Not Guesswork</h2>
+    <p class="section-lede">Record a payment by hand, or import your bank's or factoring company's remittance CSV -- ChargeGuard matches payments to invoices automatically where it can. Multiple and partial payments are tracked correctly, including known factoring or quick-pay deductions, so the outstanding balance is always accurate.</p>
+  </div>
+</div></section>
+
+<section id="whats-missing" class="section section-white"><div class="container narrow section-head centered">
+  <p class="eyebrow">7. What's Missing?</p>
+  <h2>Short Pays Get Surfaced, Not Lost</h2>
+  <p class="section-lede" style="margin:14px auto 0;">When a broker pays less than the invoice, ChargeGuard detects the gap and opens a recovery case -- tracked through evidence, follow-up, and resolution, instead of quietly disappearing into an unreconciled balance.</p>
+</div></section>
+
+<section id="financially-done" class="section section-light"><div class="container narrow section-head centered">
+  <p class="eyebrow">8. When Is the Load Financially Done?</p>
+  <h2>Reconciled and Closed -- for Real</h2>
+  <p class="section-lede" style="margin:14px auto 0;">A load isn't done when the invoice goes out. ChargeGuard tracks it through to reconciled and closed, so you always know which loads are actually finished and which still have money outstanding.</p>
+</div></section>
+
 <section id="see-it-in-action" class="section section-white"><div class="container narrow section-head centered">
   <h2>See It In Action</h2>
-  <p class="section-lede" style="margin:14px auto 0;">Real screen recordings of ChargeGuard, not mockups -- four short walkthroughs covering the full loop.</p>
+  <p class="section-lede" style="margin:14px auto 0;">Real screen recordings of ChargeGuard, not mockups. These four walkthroughs show the detention-and-accessorial evidence workflow -- one important piece of the full revenue loop described above, captured before ChargeGuard's broader invoicing, payment, and reconciliation capabilities existed in their current form.</p>
 </div>
 <div class="container">
   <div class="video-grid">
@@ -137,8 +214,8 @@
           </video>
         </div>
         <div class="video-card-body">
-          <h3>From a Photo to a Paid Claim</h3>
-          <p>The full loop: snap a photo of the rate confirmation (or upload it straight from the office), your driver taps Start and Stop and can snap Lumper receipts or detention evidence right from the app, ChargeGuard calculates what you're owed, and the claim is tracked all the way to paid.</p>
+          <h3>From a Photo to a Tracked Claim</h3>
+          <p>Snap a photo of the rate confirmation (or upload it from the office), your driver taps Start and Stop and can snap lumper receipts or detention evidence right from the app, and ChargeGuard calculates what's owed.</p>
         </div>
       </div>
       <div class="video-card">
@@ -162,7 +239,7 @@
         </div>
         <div class="video-card-body">
           <h3>The Driver Experience: A Couple of Taps</h3>
-          <p>One text message to get set up, a 6-digit PIN, and then just their own assigned trips -- no rates, no invoice amounts. A couple of taps at each stop -- mark arrived, mark departed -- is the core of the driver's job.</p>
+          <p>One text message to get set up, a 6-digit PIN, and then just their own assigned trips -- no rates, no invoice amounts. A couple of taps at each stop is the core of the driver's job.</p>
         </div>
       </div>
       <div class="video-card">
@@ -173,95 +250,43 @@
           </video>
         </div>
         <div class="video-card-body">
-          <h3>Never Lose Track of a Claim</h3>
-          <p>Every claim you've ever generated, tracked in one list through draft, sent, and paid. Update a status in one click and the dashboard updates instantly.</p>
+          <h3>Tracking a Claim Through to Resolution</h3>
+          <p>An earlier look at claim tracking. The current product tracks the full invoice and payment lifecycle -- this clip is kept as a reference for the detention-claim piece specifically; see the steps above for how billing and payment tracking work today.</p>
         </div>
       </div>
   </div>
 </div></section>
-<section id="detention-in-practice" class="section section-white media-feature-section"><div class="container media-feature-grid">
-  <div class="media-visual"><img src="/assets/detention-waiting.jpg" alt="A truck driver waiting at a loading dock, checking the time" loading="lazy"></div>
-  <div class="media-copy">
-    <h2>The Moment Detention Starts Costing You Money</h2>
-    <p class="section-lede">The driver checks in at the shipper’s dock, the clock starts ticking against the load’s free-time allowance, and every minute past that point is money the carrier is owed. Without precise, real-time documentation of detention time, those minutes slip away uncollected. ChargeGuard is built to capture, document, and bill every minute of detention your driver logs—so carriers get paid for the time they’re stuck waiting.</p>
-  </div>
-</div></section>
-<section id="understanding-charges" class="section-light"><div class="container narrow content-page">
-  <h2>Understanding Detention & Accessorial Charges</h2>
 
-  <h2>Detention</h2><p>Detention refers to the time a driver spends waiting at a shipper or receiver location beyond the agreed-upon free time. This free time is typically defined in the contract between the carrier and the broker or shipper. For example, if a load allows for 2 hours of free time and the driver waits 3 hours, the extra hour is considered detention time. Detention charges are meant to compensate the carrier for the driver's time and the truck's downtime, which could otherwise be used for another load.</p>
-    <h2>Layover</h2><p>A layover occurs when a driver is held overnight or for an extended period awaiting a load, distinct from detention at a single stop. Layover charges compensate the carrier for the driver's time and the truck's downtime during this extended wait. Unlike detention, which is typically charged by the hour, layover charges are often a flat fee for each day or partial day the driver is held. This distinction is important for accurate billing and recovery of accessorial charges.</p>
-    <h2>TONU (Truck Order Not Used)</h2><p>TONU, or Truck Order Not Used, is a fee charged when a scheduled pickup is cancelled after the truck has already been dispatched. This fee compensates the carrier for the time and resources spent preparing for and traveling to the pickup location. TONU charges are typically outlined in the carrier's contract with the broker or shipper and can vary based on the distance traveled and the time spent en route.</p>
-    <h2>Lumper Fees and Other Accessorials</h2><p>Lumper fees are charges for third-party dock labor used to load or unload a truck. These fees are often overlooked but can add up quickly, especially for carriers who frequently handle freight that requires additional labor. Other accessorial charges include stop-off fees (for additional stops not originally agreed upon) and redelivery fees (for failed delivery attempts). These charges are often owed but rarely tracked systematically, leading to significant revenue leaks for carriers.</p>
-</div></section>
-<section id="how-it-works-detail" class="section section-white"><div class="container narrow section-head centered">
-  <h2>How ChargeGuard Works: Capture to Claim in 4 Steps</h2>
-  <p class="section-lede" style="margin:14px auto 0;">From timestamp to invoice, we automate the detention and accessorial charge recovery process.</p>
-</div>
-<div class="container">
-  <div class="workflow-diagram">
-      <div class="workflow-step">
-        <div class="workflow-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h3>Capture Timestamps</h3>
-        <p>Your driver taps Start and Stop from their phone the moment they arrive and leave each stop.</p>
-      </div>
-      <div class="workflow-arrow">&rarr;</div>
-      <div class="workflow-step">
-        <div class="workflow-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M9 12h6M9 16h6M13 3v5h5"/></svg></div>
-        <h3>Apply Real Terms</h3>
-        <p>The specific free-time and accessorial terms for that load, broker, or shipper are applied -- not a generic default.</p>
-      </div>
-      <div class="workflow-arrow">&rarr;</div>
-      <div class="workflow-step">
-        <div class="workflow-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><circle cx="8" cy="11" r="0.5" fill="currentColor"/><circle cx="12" cy="11" r="0.5" fill="currentColor"/><circle cx="16" cy="11" r="0.5" fill="currentColor"/><circle cx="8" cy="15" r="0.5" fill="currentColor"/><circle cx="12" cy="15" r="0.5" fill="currentColor"/><line x1="16" y1="15" x2="16" y2="19"/><circle cx="8" cy="19" r="0.5" fill="currentColor"/><circle cx="12" cy="19" r="0.5" fill="currentColor"/></svg></div>
-        <h3>Calculate What You're Owed</h3>
-        <p>Detention and accessorial charges are calculated automatically from the captured timestamps and applicable terms.</p>
-      </div>
-      <div class="workflow-arrow">&rarr;</div>
-      <div class="workflow-step">
-        <div class="workflow-step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.3 2.3L16 10"/></svg></div>
-        <h3>Generate a Documented Claim</h3>
-        <p>A submission-ready claim or invoice is produced, with the evidence attached, ready for you to send.</p>
-      </div>
-  </div>
-</div></section>
-<section id="claims-in-practice" class="section section-light media-feature-section reverse"><div class="container media-feature-grid">
-  <div class="media-visual"><img src="/assets/claims-review.jpg" alt="A dispatcher reviewing a documented detention claim on a laptop" loading="lazy"></div>
-  <div class="media-copy">
-    <h2>A Claim Ready to Submit</h2>
-    <p class="section-lede">ChargeGuard delivers a fully documented claim or invoice, with all the supporting evidence attached and the specific broker or shipper's agreed terms clearly cited. You review the claim, confirm the details, and then submit it directly. No more reconstructing detention times from memory or paper logs—everything you need is right there, grounded in the actual terms you agreed to with the broker or shipper.</p>
-  </div>
-</div></section>
-<section id="fits-your-operation" class="section section-white"><div class="container narrow section-head centered">
-  <h2>Built for Small-to-Midsize Carriers</h2>
-  <p class="section-lede" style="margin:14px auto 0;">No enterprise bloat, no hidden fees, no unnecessary complexity</p>
+<section id="fits-your-operation" class="section section-light"><div class="container narrow section-head centered">
+  <h2>Keep Your TMS. ChargeGuard Focuses on the Money.</h2>
+  <p class="section-lede" style="margin:14px auto 0;">ChargeGuard isn't trying to replace how you operate -- it's making sure what you earn is correctly identified, billed, and accounted for.</p>
 </div>
 <div class="container">
   <div class="card-grid">
       <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M9 12h6M9 16h6M13 3v5h5"/></svg></div>
         <h3>Exact Terms, Every Time</h3>
-        <p>ChargeGuard applies the specific free-time and accessorial terms you actually have with each broker or shipper, not a generic default rule.</p>
+        <p>The specific terms you actually have with each broker or shipper, not a generic default rule.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.3 2.3L16 10"/></svg></div>
-        <h3>Works with Your Existing Data</h3>
-        <p>Your driver's phone and a photo of the rate confirmation are enough to get started -- no system overhaul, no IT project.</p>
+        <h3>Works Alongside What You Have</h3>
+        <p>A rate confirmation and your driver's phone are enough to get started -- no system overhaul, no IT project.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
         <h3>No Back-Office Team Needed</h3>
-        <p>Automates the calculation and claim-generation work, so you don't have to reconstruct charges or chase paperwork manually.</p>
+        <p>Automates the billing and tracking work, so you don't have to reconstruct charges or chase paperwork manually.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></div>
         <h3>Straight to Your Inbox, Ready to Send</h3>
-        <p>When a claim is ready, ChargeGuard prepares the complete documented package for you -- evidence attached, broker's own terms cited. Review it and confirm, and ChargeGuard emails it straight to your own inbox -- no assembling it yourself.</p>
+        <p>When an invoice is ready, ChargeGuard prepares the complete package -- evidence attached, terms cited. Review it, confirm, and it's emailed straight to you.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
         <h3>Up to 3 Years of History</h3>
-        <p>Reports cover a rolling 3-year window, so you can see exactly what's been recovered and what's outstanding without losing older records.</p>
+        <p>Reports cover a rolling 3-year window, so you can see exactly what's been billed, paid, and reconciled.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></div>
@@ -270,7 +295,8 @@
       </div>
   </div>
 </div></section>
-<section id="driver-app-and-security" class="section section-light"><div class="container narrow section-head centered">
+
+<section id="driver-app-and-security" class="section section-white"><div class="container narrow section-head centered">
   <h2>The Driver App and Document Safety</h2>
 </div>
 <div class="container">
@@ -283,45 +309,47 @@
       <div class="feature-card">
         <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <h3>Every Upload Is Scanned</h3>
-        <p>Rate confirmations, lumper receipts, and detention-evidence photos are automatically scanned for malware the moment they're uploaded -- before anything is stored.</p>
+        <p>Rate confirmations, lumper receipts, and evidence photos are automatically scanned for malware the moment they're uploaded -- before anything is stored.</p>
       </div>
   </div>
 </div></section>
+
 <section id="faq" class="section section-light"><div class="container narrow section-head centered">
   <h2>Frequently Asked Questions</h2>
 </div>
 <div class="container narrow">
   <div class="faq-list">
-      <details><summary>How does ChargeGuard capture and document detention/accessorial time?</summary><p>ChargeGuard captures detention and accessorial time from driver/dispatcher-submitted timestamps -- your driver taps Start and Stop in the app at each stop, or a dispatcher enters times by hand -- then applies the specific free-time and accessorial terms that apply to each load. This generates a documented claim or invoice ready for submission.</p></details>
-      <details><summary>Do I need any special hardware or software to use ChargeGuard?</summary><p>No. ChargeGuard is designed to work from carrier-uploaded documentation, manual entry, or the driver app -- nothing else to install or connect.</p></details>
-      <details><summary>How does ChargeGuard establish accuracy for claims that might be disputed?</summary><p>ChargeGuard uses timestamped evidence from driver/dispatcher inputs, plus any photos of lumper receipts or detention proof attached at each stop, to create a documented claim. This evidence is applied against the specific terms of each broker or shipper to ensure accuracy and provide a clear basis for claims.</p></details>
-      <details><summary>Is ChargeGuard worth it for small fleets specifically?</summary><p>ChargeGuard is specifically designed for small-to-midsize carriers (1-200 trucks), helping them recover detention and accessorial charges they might otherwise miss due to manual tracking challenges. It offers a cost-effective solution tailored to their needs.</p></details>
-      <details><summary>How is ChargeGuard different from tracking detention on paper or in a spreadsheet?</summary><p>ChargeGuard turns a driver's tap and the broker's own terms into an automatic calculation and a documented claim, reducing manual effort and increasing accuracy. Unlike manual tracking methods, nothing has to be reconstructed from memory or re-typed into a spreadsheet.</p></details>
-      <details><summary>Does ChargeGuard contact my broker or shipper directly?</summary><p>Today, ChargeGuard prepares the completed claim package for you (the dispatcher) as soon as it’s ready -- evidence attached, terms cited. You review it and confirm sending, and ChargeGuard emails it straight to your own inbox to forward. Direct-to-broker automated sending is a separate capability in controlled testing, not yet available to every account.</p></details>
-      <details><summary>How much claim history can I see?</summary><p>Reports cover a rolling 3-year window, so you can review what’s been recovered and what’s still outstanding well beyond a single year.</p></details>
+      <details><summary>Does ChargeGuard replace my TMS?</summary><p>No. ChargeGuard doesn't dispatch loads, manage drivers, or replace the tools you already use to operate. It focuses specifically on the money: what a load should pay, what it actually earned, what got billed, and what's still outstanding.</p></details>
+      <details><summary>How does ChargeGuard know what a load should pay?</summary><p>You upload or photograph the rate confirmation, and ChargeGuard reads the contracted linehaul, fuel surcharge, mileage, stop-off pay, and the specific accessorial terms for that broker or shipper.</p></details>
+      <details><summary>What counts as the load's earned revenue?</summary><p>Contracted revenue plus any legitimate additional charges actually earned on that load -- detention, layover, TONU, or lumper reimbursement -- backed by the evidence captured during the trip.</p></details>
+      <details><summary>Does ChargeGuard determine tax on the invoice?</summary><p>Where applicable, tax is calculated from stored, effective-dated jurisdiction rules -- a deterministic lookup, not a live tax-research call on every invoice.</p></details>
+      <details><summary>Can ChargeGuard track partial payments and short pays?</summary><p>Yes. Payments can be recorded manually or imported from a bank or factoring CSV, matched to invoices automatically where possible, and a short pay opens a tracked recovery case rather than silently disappearing.</p></details>
+      <details><summary>Does ChargeGuard contact my broker or shipper directly?</summary><p>Today, ChargeGuard prepares the completed invoice or claim package for you as soon as it's ready -- evidence attached, terms cited. You review it and confirm sending, and ChargeGuard emails it straight to your own inbox to forward. Direct-to-broker automated sending is a separate capability in controlled testing, not yet available to every account.</p></details>
+      <details><summary>How much history can I see?</summary><p>Reports cover a rolling 3-year window, so you can review what's been recovered, billed, and reconciled well beyond a single year.</p></details>
       <details><summary>What happens if I need to cancel?</summary><p>If you cancel, you keep access through the period you've already paid for.</p></details>
-      <details><summary>How can I learn more about ChargeGuard?</summary><p>For more information, visit our homepage or contact us directly. We’re here to answer any questions you may have about how ChargeGuard can benefit your fleet.</p></details>
   </div>
 </div></section>
+
 <section id="cta-section" class="section section-dark"><div class="container narrow final-cta">
-  <h2>Stop Leaving Money on the Table -- Get Started Today</h2>
-  <p class="section-lede">Recover the detention and accessorial charges you're currently missing with ChargeGuard. We onboard new carriers on a rolling basis as capacity opens up.</p>
-  <a class="btn btn-primary" href="https://app.chargeguard.net/signup">Start Your Free 30-Day Trial</a>
+  <h2>See What Your Loads Are Actually Earning</h2>
+  <p class="section-lede">We onboard new carriers on a rolling basis as capacity opens up.</p>
+  <a class="btn btn-primary" href="https://app.chargeguard.net/signup">Start Your 30-Day Free Trial</a>
   <p class="hero-note">No credit card required. Cancel anytime. You'll talk to the people who built it -- not a call center.</p>
 </div></section>
+
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
         <img src="/logo-text-mark.png" alt="ChargeGuard by Qiyadon" class="footer-brand-img">
-        <p>ChargeGuard by Qiyadon -- automated detention and accessorial charge recovery for small-to-midsize US trucking carriers.</p>
+        <p>ChargeGuard by Qiyadon -- revenue assurance for small-to-midsize US trucking carriers, from rate confirmation to reconciled payment.</p>
       </div>
       <div class="footer-spacer" aria-hidden="true"></div>
       <div class="footer-col">
         <h4>Navigate</h4>
         <a href="/product">Product</a>
-        <a href="/guides">Guides</a>
         <a href="/pricing">Pricing</a>
+        <a href="/guides">Guides</a>
         <a href="/faq">FAQ</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
@@ -330,12 +358,12 @@
         <h4>Legal</h4>
         <a href="/privacy-policy">Privacy Policy</a>
         <a href="/terms-of-service">Terms of Service</a>
-        <a href="/cancellation-refund-policy">Cancellation & Refund Policy</a>
+        <a href="/cancellation-refund-policy">Cancellation &amp; Refund Policy</a>
         <a href="/ownership-statement">Ownership Statement</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Qiyadon. ChargeGuard -- automated detention and accessorial charge recovery.</span>
+      <span>&copy; 2026 Qiyadon. ChargeGuard -- revenue assurance for small carriers.</span>
     </div>
   </div>
 </footer>

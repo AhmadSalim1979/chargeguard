@@ -27,12 +27,13 @@
     "@type": "Organization",
     "name": "ChargeGuard",
     "url": "https://chargeguard.net/",
-    "description": "ChargeGuard -- automated detention and accessorial charge recovery for small-to-midsize US trucking carriers.",
+    "description": "ChargeGuard -- revenue assurance for small-to-midsize US trucking carriers, from the rate confirmation to reconciled payment.",
     "brand": { "@type": "Brand", "name": "ChargeGuard" },
     "parentOrganization": { "@type": "Organization", "name": "Qiyadon", "url": "https://qiyadon.com/" }
   }
   </script>
   <script defer src="https://analytics.chargeguard.net/script.js" data-website-id="e1aefa57-5c62-4101-aeff-b0b69da52fd2"></script>
+  <script defer src="/assets/site.js"></script>
 </head>
 <body>
 <header class="site-header" data-header>
@@ -40,12 +41,16 @@
     <a href="/" class="brand"><img src="/logo-mark.png" alt="ChargeGuard by Qiyadon" class="brand-mark-img"></a>
     <nav class="nav-links" data-nav>
         <a href="/product">Product</a>
-        <a href="/guides">Guides</a>
         <a href="/pricing">Pricing</a>
+        <a href="/guides">Guides</a>
         <a href="/faq">FAQ</a>
         <a href="/about">About</a>
-        <a href="/contact">Contact</a>
     </nav>
+    <div class="nav-cta">
+      <a href="https://app.chargeguard.net/login" class="nav-signin">Sign In</a>
+      <a href="https://app.chargeguard.net/signup" class="btn btn-primary" data-umami-event="cta_click" data-umami-event-cta="nav_start_trial">Start Free Trial</a>
+    </div>
+    <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"><span></span></button>
   </div>
 </header>
 <section class="section-white"><div class="container narrow content-page">
@@ -63,14 +68,14 @@
     <div class="footer-grid">
       <div>
         <img src="/logo-text-mark.png" alt="ChargeGuard by Qiyadon" class="footer-brand-img">
-        <p>ChargeGuard by Qiyadon -- automated detention and accessorial charge recovery for small-to-midsize US trucking carriers.</p>
+        <p>ChargeGuard by Qiyadon -- revenue assurance for small-to-midsize US trucking carriers, from rate confirmation to reconciled payment.</p>
       </div>
       <div class="footer-spacer" aria-hidden="true"></div>
       <div class="footer-col">
         <h4>Navigate</h4>
         <a href="/product">Product</a>
-        <a href="/guides">Guides</a>
         <a href="/pricing">Pricing</a>
+        <a href="/guides">Guides</a>
         <a href="/faq">FAQ</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
@@ -84,7 +89,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Qiyadon. ChargeGuard -- automated detention and accessorial charge recovery.</span>
+      <span>&copy; 2026 Qiyadon. ChargeGuard -- revenue assurance for small carriers.</span>
     </div>
   </div>
 </footer>
